@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.operation.mapper.OperaCategoryMapper">
+    <resultMap type="OperaCategory" id="OperaCategoryResult">
+        <id property="categoryId" column="category_id"/>
+        <result property="pid" column="pid"/>
+        <result property="categoryCode" column="category_code"/>
+        <result property="categoryName" column="category_name"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectCategoryVo">
+        select category_id,
+               category_code,
+               category_name,
+               pid,
+               create_by,
+               create_time,
+               remark
+        from opera_category
+    </sql>
+
+    <select id="selectCategoryList" parameterType="OperaCategory" resultMap="OperaCategoryResult">
+        <include refid="selectCategoryVo"/>
+        <where>
+            <if test="categoryCode != null and categoryCode != ''">
+                AND category_code = #{categoryCode}
+            </if>
+            <if test="categoryName != null and categoryName != ''">
+                AND category_name like concat('%', #{categoryName}, '%')
+            </if>
+            <if test="pid != null and pid != ''">
+                AND pid = #{pid}
+            </if>
+            <if test="pid == null || pid == ''">
+                AND pid is null
+            </if>
+        </where>
+    </select>
+
+    <select id="selectCategoryAll" resultMap="OperaCategoryResult">
+        <include refid="selectCategoryVo"/>
+    </select>
+
+    <select id="selectCategoryById" parameterType="Long" resultMap="OperaCategoryResult">
+        <include refid="selectCategoryVo"/>
+        where category_id = #{categoryId}
+    </select>
+
+    <select id="checkCategoryNameUnique" parameterType="String" resultMap="OperaCategoryResult">
+        <include refid="selectCategoryVo"/>
+        where category_name=#{categoryName} limit 1
+    </select>
+
+    <select id="checkCategoryCodeUnique" parameterType="String" resultMap="OperaCategoryResult">
+        <include refid="selectCategoryVo"/>
+        where category_code=#{categoryCode} limit 1
+    </select>
+
+    <update id="updateCategory" parameterType="OperaCategory">
+        update opera_category
+        <set>
+            <if test="pid != null and pid != ''">pid = #{pid},</if>
+            <if test="categoryCode != null and categoryCode != ''">category_code = #{categoryCode},</if>
+            <if test="categoryName != null and categoryName != ''">category_name = #{categoryName},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            update_time = sysdate()
+        </set>
+        where category_id = #{categoryId}
+    </update>
+
+    <insert id="insertCategory" parameterType="OperaCategory" useGeneratedKeys="true" keyProperty="categoryId">
+        insert into opera_category(
+        <if test="categoryId != null and categoryId != 0">category_id,</if>
+        <if test="pid != null and pid != 0">pid,</if>
+        <if test="categoryCode != null and categoryCode != ''">category_code,</if>
+        <if test="categoryName != null and categoryName != ''">category_name,</if>
+        <if test="remark != null and remark != ''">remark,</if>
+        <if test="createBy != null and createBy != ''">create_by,</if>
+        create_time
+        )values(
+        <if test="categoryId != null and categoryId != 0">#{categoryId},</if>
+        <if test="pid != null and pid != 0">#{pid},</if>
+        <if test="categoryCode != null and categoryCode != ''">#{categoryCode},</if>
+        <if test="categoryName != null and categoryName != ''">#{categoryName},</if>
+        <if test="remark != null and remark != ''">#{remark},</if>
+        <if test="createBy != null and createBy != ''">#{createBy},</if>
+        sysdate()
+        )
+    </insert>
+
+    <delete id="deleteCategoryById" parameterType="Long">
+        delete
+        from opera_category
+        where category_id = #{categoryId} or pid = #{categoryId}
+    </delete>
+
+    <delete id="deleteCategoryByPid" parameterType="Long">
+        delete
+        from opera_category
+        where pid = #{pid}
+    </delete>
+
+    <delete id="deleteCategoryByIds" parameterType="Long">
+        delete from opera_category where category_id in
+        <foreach collection="array" item="categoryId" open="(" separator="," close=")">
+            #{categoryId}
+        </foreach> or pid in
+        <foreach collection="array" item="categoryId" open="(" separator="," close=")">
+            #{categoryId}
+        </foreach>
+    </delete>
+</mapper> 

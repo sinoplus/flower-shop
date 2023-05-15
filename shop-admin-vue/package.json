@@ -1,0 +1,36 @@
+{
+  "name": "shop-admin-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.4",
+    "file-saver": "^2.0.5",
+    "js-cookie": "^3.0.5",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.36",
+    "vue": "^3.3.2",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.6",
+    "@types/file-saver": "^2.0.5",
+    "@types/js-cookie": "^3.0.3",
+    "@types/node": "^20.1.4",
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.40.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5",
+    "vite-plugin-pwa": "^0.14.7",
+    "vue-tsc": "^1.6.5"
+  }
+}

@@ -1,0 +1,3 @@
+07:57:57.428 [Thread-13] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+07:57:57.433 [Thread-13] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-1} closing ...
+07:57:57.434 [Thread-13] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-1} closed
