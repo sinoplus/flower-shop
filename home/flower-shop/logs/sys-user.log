@@ -1,1 +1,2 @@
-07:57:57.428 [Thread-13] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+00:21:43.329 [schedule-pool-3] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+00:23:38.071 [schedule-pool-2] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]

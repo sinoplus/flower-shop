@@ -224,9 +224,6 @@ insert into sys_menu
 values ('114', '缓存列表', '2', '6', 'cacheList', 'monitor/cache/list', '', 1, 0, 'C', '0', '0', 'monitor:cache:list',
         'redis-list', 'admin', sysdate(), '', null, '缓存列表菜单');
 insert into sys_menu
-values ('115', '表单构建', '3', '1', 'build', 'tool/build/index', '', 1, 0, 'C', '0', '0', 'tool:build:list', 'build',
-        'admin', sysdate(), '', null, '表单构建菜单');
-insert into sys_menu
 values ('117', '系统接口', '3', '3', 'swagger', 'tool/swagger/index', '', 1, 0, 'C', '0', '0', 'tool:swagger:list',
         'swagger', 'admin', sysdate(), '', null, '系统接口菜单');
 -- 三级菜单
@@ -792,7 +789,6 @@ insert into sys_dict_data
 values (28, 1, '成功', '0', 'sys_common_status', '', 'primary', 'N', '0', 'admin', sysdate(), '', null, '正常状态');
 insert into sys_dict_data
 values (29, 2, '失败', '1', 'sys_common_status', '', 'danger', 'N', '0', 'admin', sysdate(), '', null, '停用状态');
-
 
 -- ----------------------------
 -- 13、参数配置表

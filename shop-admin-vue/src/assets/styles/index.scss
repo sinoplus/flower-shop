@@ -4,7 +4,7 @@
 @import './element-ui.scss';
 @import './sidebar.scss';
 @import './btn.scss';
-@import './global.scss';
+@import './shop.scss';
 
 body {
   height: 100%;
@@ -181,4 +181,13 @@ aside {
     vertical-align: middle;
     margin-bottom: 10px;
   }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
 }

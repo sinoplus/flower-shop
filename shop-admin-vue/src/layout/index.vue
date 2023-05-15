@@ -1,14 +1,14 @@
-<script setup lang="ts">
+<script setup name="Layout" lang="ts">
 import { useWindowSize } from '@vueuse/core'
-import { computed, watchEffect } from 'vue'
-import { AppMain, Navbar, Settings, TagsView } from './components/index.js'
+import { computed, ref, watchEffect } from 'vue'
+import { AppMain, Navbar, Settings, TagsView } from './components'
+import Sidebar from './components/Sidebar/index.vue'
 
 import useAppStore from '@/store/modules/app'
 import useSettingsStore from '@/store/modules/settings'
 
 const settingsStore = useSettingsStore()
 const theme = computed(() => settingsStore.theme)
-const sideTheme = computed(() => settingsStore.sideTheme)
 const sidebar = computed(() => useAppStore().sidebar)
 const device = computed(() => useAppStore().device)
 const needTagsView = computed(() => settingsStore.tagsView)
@@ -21,7 +21,7 @@ const classObj = computed(() => ({
   mobile: device.value === 'mobile',
 }))
 
-const { width, height } = useWindowSize()
+const { width } = useWindowSize()
 const WIDTH = 992 // refer to Bootstrap's responsive design
 
 watchEffect(() => {
@@ -41,9 +41,9 @@ function handleClickOutside() {
   useAppStore().closeSideBar({ withoutAnimation: false })
 }
 
-const settingRef = ref(null)
+const settingRef = ref<any>(null)
 function setLayout() {
-  settingRef.value.openSetting()
+  settingRef.value?.openSetting()
 }
 </script>
 
@@ -53,7 +53,7 @@ function setLayout() {
     <Sidebar v-if="!sidebar.hide" class="sidebar-container" />
     <div :class="{ hasTagsView: needTagsView, sidebarHide: sidebar.hide }" class="main-container">
       <div :class="{ 'fixed-header': fixedHeader }">
-        <Navbar @setLayout="setLayout" />
+        <Navbar @set-layout="setLayout" />
         <TagsView v-if="needTagsView" />
       </div>
       <AppMain />
@@ -63,49 +63,49 @@ function setLayout() {
 </template>
 
 <style lang="scss" scoped>
-  @import "@/assets/styles/mixin.scss";
-  @import "@/assets/styles/variables.module.scss";
+@import '@/assets/styles/mixin.scss';
+@import '@/assets/styles/variables.module.scss';
 
 .app-wrapper {
-  @include clearfix;
-  position: relative;
-  height: 100%;
-  width: 100%;
+    @include clearfix;
+    position: relative;
+    height: 100%;
+    width: 100%;
 
-  &.mobile.openSidebar {
-    position: fixed;
-    top: 0;
-  }
+    &.mobile.openSidebar {
+        position: fixed;
+        top: 0;
+    }
 }
 
 .drawer-bg {
-  background: #000;
-  opacity: 0.3;
-  width: 100%;
-  top: 0;
-  height: 100%;
-  position: absolute;
-  z-index: 999;
+    background: #000;
+    opacity: 0.3;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
 }
 
 .fixed-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9;
-  width: calc(100% - #{$base-sidebar-width});
-  transition: width 0.28s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: calc(100% - #{$base-sidebar-width});
+    transition: width 0.28s;
 }
 
 .hideSidebar .fixed-header {
-  width: calc(100% - 54px);
+    width: calc(100% - 54px);
 }
 
 .sidebarHide .fixed-header {
-  width: 100%;
+    width: 100%;
 }
 
 .mobile .fixed-header {
-  width: 100%;
+    width: 100%;
 }
 </style>

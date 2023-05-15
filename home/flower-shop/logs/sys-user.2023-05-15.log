@@ -1,0 +1,6 @@
+07:57:57.428 [Thread-13] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+19:25:19.539 [restartedMain] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+19:27:20.272 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:28:52.092 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+19:28:58.111 [schedule-pool-2] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+21:57:50.557 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]

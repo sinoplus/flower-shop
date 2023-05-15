@@ -1,46 +1,46 @@
-import path from 'path'
+import path from 'node:path'
 import { defineConfig, loadEnv } from 'vite'
-import type { PluginOption } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import { VitePWA } from 'vite-plugin-pwa'
+import createVitePlugins from './vite/plugins'
 
-function setupPlugins(env: ImportMetaEnv): PluginOption[] {
-	return [
-		vue(),
-		env.VITE_GLOB_APP_PWA === 'true' && VitePWA({
-			injectRegister: 'auto',
-			manifest: {
-				name: 'chatGPT',
-				short_name: 'chatGPT',
-				icons: [
-					{ src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
-					{ src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png' },
-				],
-			},
-		}),
-	]
-}
-
-export default defineConfig((env) => {
-	const viteEnv = loadEnv(env.mode, process.cwd()) as unknown as ImportMetaEnv
-	return {
-		resolve: {
-			alias: {
-				'@': path.resolve(process.cwd(), 'src'),
-			},
-		},
-		plugins: setupPlugins(viteEnv),
-		server: {
-			host: '0.0.0.0',
-			port: 9527,
-			open: false,
-			proxy: {
-				'/api': {
-					target: viteEnv.VITE_APP_API_BASE_URL,
-					changeOrigin: true, // 允许跨域
-					rewrite: path => path.replace('/api/', '/'),
-				},
-			},
-		},
-	}
+export default defineConfig(({ mode, command }) => {
+  const env = loadEnv(mode, process.cwd())
+  const { VITE_APP_ENV } = env
+  return {
+    plugins: createVitePlugins(env, command === 'build'),
+    // 部署生产环境和开发环境下的URL。
+    // 默认情况下，vite 会假设你的应用是被部署在一个域名的根路径上
+    // 例如 https://www.xxx.vip/。如果应用被部署在一个子路径上，你就需要用这个选项指定这个子路径。例如，如果你的应用被部署在 https://www.ruoyi.vip/admin/，则设置 baseUrl 为 /admin/。
+    base: VITE_APP_ENV === 'production' ? '/' : '/',
+    server: {
+      port: 9527,
+      host: true,
+      open: true,
+      proxy: {
+        // https://cn.vitejs.dev/config/#server-proxy
+        '/api': {
+          target: 'http://localhost:8888',
+          changeOrigin: true,
+          rewrite: p => p.replace(/^\/api/, ''),
+        },
+      },
+    },
+    resolve: {
+      alias: {
+        // 设置路径
+        '~': path.resolve(__dirname, './'),
+        // 设置别名
+        '@': path.resolve(__dirname, './src'),
+      },
+    },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('element-plus/theme'))
+              return 'ele'
+          },
+        },
+      },
+    },
+  }
 })

@@ -1,22 +1,16 @@
 <script setup lang="ts">
-import { NConfigProvider } from 'naive-ui'
-import { NaiveProvider } from '@/components/common'
-import { useTheme } from '@/hooks/useTheme'
-import { useLanguage } from '@/hooks/useLanguage'
+import { nextTick, onMounted } from 'vue'
+import useSettingsStore from '@/store/modules/settings'
+import { handleThemeStyle } from '@/utils/theme'
 
-const { theme, themeOverrides } = useTheme()
-const { language } = useLanguage()
+onMounted(() => {
+  nextTick(() => {
+    // 初始化主题样式
+    handleThemeStyle(useSettingsStore().theme)
+  })
+})
 </script>
 
 <template>
-  <NConfigProvider
-    class="h-full"
-    :theme="theme"
-    :theme-overrides="themeOverrides"
-    :locale="language"
-  >
-    <NaiveProvider>
-      <RouterView />
-    </NaiveProvider>
-  </NConfigProvider>
+  <router-view />
 </template>

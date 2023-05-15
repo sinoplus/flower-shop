@@ -1,5 +1,5 @@
 const sessionCache = {
-  set(key: string, value: string) {
+  set(key: string, value: any) {
     if (!sessionStorage)
       return
 
@@ -29,7 +29,7 @@ const sessionCache = {
   },
 }
 const localCache = {
-  set(key: string, value: string) {
+  set(key: string, value: any) {
     if (!localStorage)
       return
 
@@ -60,6 +60,12 @@ const localCache = {
 }
 
 export default {
+  /**
+     * 会话级缓存
+     */
   session: sessionCache,
+  /**
+     * 本地缓存
+     */
   local: localCache,
 }
