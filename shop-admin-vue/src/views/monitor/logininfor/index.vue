@@ -173,7 +173,7 @@ getList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['monitor:logininfor:remove']"
+          v-hasAccess="['monitor:logininfor:remove']"
           type="danger"
           plain
           icon="Delete"
@@ -185,7 +185,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['monitor:logininfor:remove']"
+          v-hasAccess="['monitor:logininfor:remove']"
           type="danger"
           plain
           icon="Delete"
@@ -196,7 +196,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['monitor:logininfor:unlock']"
+          v-hasAccess="['monitor:logininfor:unlock']"
           type="primary"
           plain
           icon="Unlock"
@@ -208,7 +208,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['monitor:logininfor:export']"
+          v-hasAccess="['monitor:logininfor:export']"
           type="warning"
           plain
           icon="Download"

@@ -113,7 +113,7 @@ getList()
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template #default="scope">
           <el-button
-            v-hasPermi="['monitor:online:forceLogout']"
+            v-hasAccess="['monitor:online:forceLogout']"
             link
             type="primary"
             icon="Delete"

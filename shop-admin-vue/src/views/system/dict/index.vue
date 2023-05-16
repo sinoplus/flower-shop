@@ -211,7 +211,7 @@ getList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:add']"
+          v-hasAccess="['system:dict:add']"
           type="primary"
           plain
           icon="Plus"
@@ -222,7 +222,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:edit']"
+          v-hasAccess="['system:dict:edit']"
           type="success"
           plain
           icon="Edit"
@@ -234,7 +234,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:remove']"
+          v-hasAccess="['system:dict:remove']"
           type="danger"
           plain
           icon="Delete"
@@ -246,7 +246,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:export']"
+          v-hasAccess="['system:dict:export']"
           type="warning"
           plain
           icon="Download"
@@ -257,7 +257,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:remove']"
+          v-hasAccess="['system:dict:remove']"
           type="danger"
           plain
           icon="Refresh"
@@ -294,7 +294,7 @@ getList()
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template #default="scope">
           <el-button
-            v-hasPermi="['system:dict:edit']"
+            v-hasAccess="['system:dict:edit']"
             link
             type="primary"
             icon="Edit"
@@ -303,7 +303,7 @@ getList()
             修改
           </el-button>
           <el-button
-            v-hasPermi="['system:dict:remove']"
+            v-hasAccess="['system:dict:remove']"
             link
             type="primary"
             icon="Delete"

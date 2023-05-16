@@ -11,20 +11,20 @@ public interface IOperaCategoryService {
     /**
      * 查询种类信息集合
      *
-     * @param category 岗位信息
-     * @return 岗位列表
+     * @param category 种类信息
+     * @return 种类列表
      */
     public List<OperaCategory> selectCategoryList(OperaCategory category);
 
     /**
      * 查询所有种类
      *
-     * @return 岗位列表
+     * @return 种类列表
      */
     public List<OperaCategory> selectCategoryAll();
 
     /**
-     * 通过种类ID查询岗位信息
+     * 通过种类ID查询种类信息
      *
      * @param categoryId 种类ID
      * @return 种类对象信息
@@ -64,26 +64,26 @@ public interface IOperaCategoryService {
     public int deleteCategoryByPid(Long pid);
 
     /**
-     * 批量删除岗位信息
+     * 批量删除种类信息
      *
-     * @param categoryIds 需要删除的岗位ID
+     * @param categoryIds 需要删除的种类ID
      * @return 结果
      */
     public int deleteCategoryByIds(Long[] categoryIds);
 
     /**
-     * 新增保存岗位信息
+     * 新增保存种类信息
      *
-     * @param post 岗位信息
+     * @param category 种类信息
      * @return 结果
      */
-    public int insertCategory(OperaCategory post);
+    public int insertCategory(OperaCategory category);
 
     /**
-     * 修改保存岗位信息
+     * 修改保存种类信息
      *
-     * @param post 岗位信息
+     * @param category 种类信息
      * @return 结果
      */
-    public int updateCategory(OperaCategory post);
+    public int updateCategory(OperaCategory category);
 }

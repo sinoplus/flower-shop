@@ -396,7 +396,7 @@ getList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:role:add']"
+          v-hasAccess="['system:role:add']"
           type="primary"
           plain
           icon="Plus"
@@ -407,7 +407,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:role:edit']"
+          v-hasAccess="['system:role:edit']"
           type="success"
           plain
           icon="Edit"
@@ -419,7 +419,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:role:remove']"
+          v-hasAccess="['system:role:remove']"
           type="danger"
           plain
           icon="Delete"
@@ -431,7 +431,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:role:export']"
+          v-hasAccess="['system:role:export']"
           type="warning"
           plain
           icon="Download"
@@ -469,7 +469,7 @@ getList()
         <template #default="scope">
           <el-tooltip v-if="scope.row.roleId !== 1" content="修改" placement="top">
             <el-button
-              v-hasPermi="['system:role:edit']"
+              v-hasAccess="['system:role:edit']"
               link
               type="primary"
               icon="Edit"
@@ -478,7 +478,7 @@ getList()
           </el-tooltip>
           <el-tooltip v-if="scope.row.roleId !== 1" content="删除" placement="top">
             <el-button
-              v-hasPermi="['system:role:remove']"
+              v-hasAccess="['system:role:remove']"
               link
               type="primary"
               icon="Delete"
@@ -487,7 +487,7 @@ getList()
           </el-tooltip>
           <el-tooltip v-if="scope.row.roleId !== 1" content="数据权限" placement="top">
             <el-button
-              v-hasPermi="['system:role:edit']"
+              v-hasAccess="['system:role:edit']"
               link
               type="primary"
               icon="CircleCheck"
@@ -496,7 +496,7 @@ getList()
           </el-tooltip>
           <el-tooltip v-if="scope.row.roleId !== 1" content="分配用户" placement="top">
             <el-button
-              v-hasPermi="['system:role:edit']"
+              v-hasAccess="['system:role:edit']"
               link
               type="primary"
               icon="User"

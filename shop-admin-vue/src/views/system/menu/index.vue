@@ -210,7 +210,7 @@ getList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:menu:add']"
+          v-hasAccess="['system:menu:add']"
           type="primary"
           plain
           icon="Plus"
@@ -266,7 +266,7 @@ getList()
       <el-table-column label="操作" align="center" width="200" class-name="small-padding fixed-width">
         <template #default="scope">
           <el-button
-            v-hasPermi="['system:menu:edit']"
+            v-hasAccess="['system:menu:edit']"
             link
             type="primary"
             icon="Edit"
@@ -275,7 +275,7 @@ getList()
             修改
           </el-button>
           <el-button
-            v-hasPermi="['system:menu:add']"
+            v-hasAccess="['system:menu:add']"
             link
             type="primary"
             icon="Plus"
@@ -284,7 +284,7 @@ getList()
             新增
           </el-button>
           <el-button
-            v-hasPermi="['system:menu:remove']"
+            v-hasAccess="['system:menu:remove']"
             link
             type="primary"
             icon="Delete"

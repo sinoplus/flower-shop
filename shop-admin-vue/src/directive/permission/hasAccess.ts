@@ -1,5 +1,5 @@
 /**
- * v-hasPermi 操作权限处理
+ * v-hasAccess 操作权限处理
  */
 
 import useUserStore from '@/store/modules/user'

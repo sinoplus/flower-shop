@@ -421,7 +421,7 @@ getList()
         <el-row :gutter="10" class="mb8">
           <el-col :span="1.5">
             <el-button
-              v-hasPermi="['system:user:add']"
+              v-hasAccess="['system:user:add']"
               type="primary"
               plain
               icon="Plus"
@@ -432,7 +432,7 @@ getList()
           </el-col>
           <el-col :span="1.5">
             <el-button
-              v-hasPermi="['system:user:edit']"
+              v-hasAccess="['system:user:edit']"
               type="success"
               plain
               icon="Edit"
@@ -444,7 +444,7 @@ getList()
           </el-col>
           <el-col :span="1.5">
             <el-button
-              v-hasPermi="['system:user:remove']"
+              v-hasAccess="['system:user:remove']"
               type="danger"
               plain
               icon="Delete"
@@ -456,7 +456,7 @@ getList()
           </el-col>
           <el-col :span="1.5">
             <el-button
-              v-hasPermi="['system:user:import']"
+              v-hasAccess="['system:user:import']"
               type="info"
               plain
               icon="Upload"
@@ -467,7 +467,7 @@ getList()
           </el-col>
           <el-col :span="1.5">
             <el-button
-              v-hasPermi="['system:user:export']"
+              v-hasAccess="['system:user:export']"
               type="warning"
               plain
               icon="Download"
@@ -554,7 +554,7 @@ getList()
             <template #default="scope">
               <el-tooltip v-if="scope.row.userId !== 1" content="修改" placement="top">
                 <el-button
-                  v-hasPermi="['system:user:edit']"
+                  v-hasAccess="['system:user:edit']"
                   link
                   type="primary"
                   icon="Edit"
@@ -563,7 +563,7 @@ getList()
               </el-tooltip>
               <el-tooltip v-if="scope.row.userId !== 1" content="删除" placement="top">
                 <el-button
-                  v-hasPermi="['system:user:remove']"
+                  v-hasAccess="['system:user:remove']"
                   link
                   type="primary"
                   icon="Delete"
@@ -572,7 +572,7 @@ getList()
               </el-tooltip>
               <el-tooltip v-if="scope.row.userId !== 1" content="重置密码" placement="top">
                 <el-button
-                  v-hasPermi="['system:user:resetPwd']"
+                  v-hasAccess="['system:user:resetPwd']"
                   link
                   type="primary"
                   icon="Key"
@@ -581,7 +581,7 @@ getList()
               </el-tooltip>
               <el-tooltip v-if="scope.row.userId !== 1" content="分配角色" placement="top">
                 <el-button
-                  v-hasPermi="['system:user:edit']"
+                  v-hasAccess="['system:user:edit']"
                   link
                   type="primary"
                   icon="CircleCheck"

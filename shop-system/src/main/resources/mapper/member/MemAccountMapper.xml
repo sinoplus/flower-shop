@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.member.mapper.MemAccountMapper">
+    <resultMap type="MemAccount" id="MemAccountResult">
+        <id property="accountId" column="account_id"/>
+        <result property="accountName" column="account_name"/>
+        <result property="phoneNumber" column="phone_number"/>
+        <result property="realName" column="real_name"/>
+        <result property="sex" column="sex"/>
+        <result property="email" column="email"/>
+        <result property="address" column="address"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectAccountVo">
+        select account_id,
+               account_name,
+               phone_number,
+               real_name,
+               sex,
+               email,
+               address,
+               create_by,
+               create_time,
+               update_by,
+               update_time,
+               remark
+        from mem_account
+    </sql>
+
+    <select id="selectAccountList" parameterType="MemAccount" resultMap="MemAccountResult">
+        <include refid="selectAccountVo"/>
+        <where>
+            <if test="accountName != null and accountName != ''">
+                AND account_name like concat('%', #{accountName}, '%')
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                AND phone_number = #{phoneNumber}
+            </if>
+            <if test="realName != null and realName != ''">
+                AND real_name = #{realName}
+            </if>
+            <if test="sex != null and sex != ''">
+                AND sex = #{sex}
+            </if>
+            <if test="email != null and email != ''">
+                AND email = #{email}
+            </if>
+            <if test="address != null and address != ''">
+                AND address = #{address}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectAccountAll" resultMap="MemAccountResult">
+        <include refid="selectAccountVo"/>
+    </select>
+
+    <select id="selectAccountById" parameterType="Long" resultMap="MemAccountResult">
+        <include refid="selectAccountVo"/>
+        where account_id = #{accountId}
+    </select>
+
+    <select id="checkAccountNameUnique" parameterType="String" resultMap="MemAccountResult">
+        <include refid="selectAccountVo"/>
+        where account_name = #{accountName} limit 1
+    </select>
+
+    <update id="updateAccount" parameterType="MemAccount">
+        update mem_account
+        <set>
+            <if test="accountName != null and accountName != ''">account_name = #{accountName},</if>
+            <if test="phoneNumber != null and phoneNumber != ''">phone_number = #{phoneNumber},</if>
+            <if test="realName != null and realName != ''">real_name = #{realName},</if>
+            <if test="sex != null and sex != ''">sex = #{realName},</if>
+            <if test="email != null and email != ''">email = #{email},</if>
+            <if test="address != null and address != ''">address = #{address},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            update_time = sysdate()
+        </set>
+        where account_id = #{accountId}
+    </update>
+
+    <insert id="insertAccount" parameterType="MemAccount" useGeneratedKeys="true" keyProperty="accountId">
+        insert into mem_account(
+        <if test="accountId != null and accountId != 0">account_id,</if>
+        <if test="accountName != null and accountName != ''">account_name,</if>
+        <if test="phoneNumber != null and phoneNumber != ''">phone_number,</if>
+        <if test="realName != null and realName != ''">real_name,</if>
+        <if test="sex != null and sex != ''">sex,</if>
+        <if test="email != null and email != ''">email,</if>
+        <if test="address != null and address != ''">address,</if>
+        <if test="remark != null and remark != ''">remark,</if>
+        <if test="createBy != null and createBy != ''">create_by,</if>
+        create_time
+        )values(
+        <if test="accountId != null and accountId != 0">#{accountId},</if>
+        <if test="accountName != null and accountName != ''">#{accountName},</if>
+        <if test="phoneNumber != null and phoneNumber != ''">#{phoneNumber},</if>
+        <if test="realName != null and realName != ''">#{realName},</if>
+        <if test="sex != null and sex != ''">#{sex},</if>
+        <if test="email != null and email != ''">#{email},</if>
+        <if test="address != null and address != ''">#{address},</if>
+        <if test="remark != null and remark != ''">#{remark},</if>
+        <if test="createBy != null and createBy != ''">#{createBy},</if>
+        sysdate()
+        )
+    </insert>
+
+    <delete id="deleteAccountById" parameterType="Long">
+        delete
+        from mem_account
+        where account_id = #{accountId}
+    </delete>
+
+    <delete id="deleteAccountByIds" parameterType="Long">
+        delete from mem_account where account_id in
+        <foreach collection="array" item="accountId" open="(" separator="," close=")">
+            #{accountId}
+        </foreach>
+    </delete>
+</mapper>

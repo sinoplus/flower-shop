@@ -885,3 +885,24 @@ create table opera_category
     remark      varchar(500) default null comment '备注',
     primary key (category_id)
 ) engine=innodb comment = '种类信息表';
+
+-- ----------------------------
+-- 19、会员信息表
+-- ----------------------------
+drop table if exists mem_account;
+create table mem_account
+(
+    account_id     bigint(20) not null auto_increment comment '用户ID',
+    account_name   varchar(50) not null comment '用户名称',
+    phone_number   varchar(50) not null comment '手机号',
+    real_name      varchar(30) not null comment '真实姓名',
+    sex            int(4) not null default 0  comment '性别',
+    email          varchar(30) not null comment '邮箱',
+    address        varchar(150) not null comment '地址',
+    create_by   varchar(64)  default '' comment '创建者',
+    create_time datetime comment '创建时间',
+    update_by   varchar(64)  default '' comment '更新者',
+    update_time datetime comment '更新时间',
+    remark      varchar(500) default null comment '备注',
+    primary key (account_id)
+) engine=innodb comment = '会员信息表';

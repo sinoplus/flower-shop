@@ -22,7 +22,7 @@ public class OperaCategoryServiceImpl implements IOperaCategoryService {
      * 查询种类信息集合
      *
      * @param category 种类信息
-     * @return 岗位信息集合
+     * @return 种类信息集合
      */
     @Override
     public List<OperaCategory> selectCategoryList(OperaCategory category) {
@@ -85,7 +85,7 @@ public class OperaCategoryServiceImpl implements IOperaCategoryService {
     /**
      * 删除种类信息
      *
-     * @param categoryId 岗位ID
+     * @param categoryId 种类ID
      * @return 结果
      */
     @Override

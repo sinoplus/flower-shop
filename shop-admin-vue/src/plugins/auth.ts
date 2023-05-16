@@ -28,7 +28,7 @@ function authRole(role: string) {
 
 export default {
   // 验证用户是否具备某权限
-  hasPermi(permission: any) {
+  hasAccess(permission: any) {
     return authPermission(permission)
   },
   // 验证用户是否含有指定权限，只需包含其中一个

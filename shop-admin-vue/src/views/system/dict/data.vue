@@ -237,7 +237,7 @@ getTypeList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:add']"
+          v-hasAccess="['system:dict:add']"
           type="primary"
           plain
           icon="Plus"
@@ -248,7 +248,7 @@ getTypeList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:edit']"
+          v-hasAccess="['system:dict:edit']"
           type="success"
           plain
           icon="Edit"
@@ -260,7 +260,7 @@ getTypeList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:remove']"
+          v-hasAccess="['system:dict:remove']"
           type="danger"
           plain
           icon="Delete"
@@ -272,7 +272,7 @@ getTypeList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:dict:export']"
+          v-hasAccess="['system:dict:export']"
           type="warning"
           plain
           icon="Download"
@@ -320,7 +320,7 @@ getTypeList()
       <el-table-column label="操作" align="center" width="150" class-name="small-padding fixed-width">
         <template #default="scope">
           <el-button
-            v-hasPermi="['system:dict:edit']"
+            v-hasAccess="['system:dict:edit']"
             link
             type="primary"
             icon="Edit"
@@ -329,7 +329,7 @@ getTypeList()
             修改
           </el-button>
           <el-button
-            v-hasPermi="['system:dict:remove']"
+            v-hasAccess="['system:dict:remove']"
             link
             type="primary"
             icon="Delete"

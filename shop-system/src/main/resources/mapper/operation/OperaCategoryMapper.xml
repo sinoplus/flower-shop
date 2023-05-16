@@ -99,7 +99,8 @@
     <delete id="deleteCategoryById" parameterType="Long">
         delete
         from opera_category
-        where category_id = #{categoryId} or pid = #{categoryId}
+        where category_id = #{categoryId}
+           or pid = #{categoryId}
     </delete>
 
     <delete id="deleteCategoryByPid" parameterType="Long">
@@ -112,7 +113,8 @@
         delete from opera_category where category_id in
         <foreach collection="array" item="categoryId" open="(" separator="," close=")">
             #{categoryId}
-        </foreach> or pid in
+        </foreach>
+        or pid in
         <foreach collection="array" item="categoryId" open="(" separator="," close=")">
             #{categoryId}
         </foreach>

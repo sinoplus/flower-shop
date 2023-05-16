@@ -200,7 +200,7 @@ getList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['tool:gen:code']"
+          v-hasAccess="['tool:gen:code']"
           type="primary"
           plain
           icon="Download"
@@ -211,7 +211,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['tool:gen:import']"
+          v-hasAccess="['tool:gen:import']"
           type="info"
           plain
           icon="Upload"
@@ -222,7 +222,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['tool:gen:edit']"
+          v-hasAccess="['tool:gen:edit']"
           type="success"
           plain
           icon="Edit"
@@ -234,7 +234,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['tool:gen:remove']"
+          v-hasAccess="['tool:gen:remove']"
           type="danger"
           plain
           icon="Delete"
@@ -268,7 +268,7 @@ getList()
         <template #default="scope">
           <el-tooltip content="预览" placement="top">
             <el-button
-              v-hasPermi="['tool:gen:preview']"
+              v-hasAccess="['tool:gen:preview']"
               link
               type="primary"
               icon="View"
@@ -277,7 +277,7 @@ getList()
           </el-tooltip>
           <el-tooltip content="编辑" placement="top">
             <el-button
-              v-hasPermi="['tool:gen:edit']"
+              v-hasAccess="['tool:gen:edit']"
               link
               type="primary"
               icon="Edit"
@@ -286,7 +286,7 @@ getList()
           </el-tooltip>
           <el-tooltip content="删除" placement="top">
             <el-button
-              v-hasPermi="['tool:gen:remove']"
+              v-hasAccess="['tool:gen:remove']"
               link
               type="primary"
               icon="Delete"
@@ -295,7 +295,7 @@ getList()
           </el-tooltip>
           <el-tooltip content="同步" placement="top">
             <el-button
-              v-hasPermi="['tool:gen:edit']"
+              v-hasAccess="['tool:gen:edit']"
               link
               type="primary"
               icon="Refresh"
@@ -304,7 +304,7 @@ getList()
           </el-tooltip>
           <el-tooltip content="生成代码" placement="top">
             <el-button
-              v-hasPermi="['tool:gen:code']"
+              v-hasAccess="['tool:gen:code']"
               link
               type="primary"
               icon="Download"

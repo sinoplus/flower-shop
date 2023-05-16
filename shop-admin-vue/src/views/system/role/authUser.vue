@@ -134,7 +134,7 @@ getList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:role:add']"
+          v-hasAccess="['system:role:add']"
           type="primary"
           plain
           icon="Plus"
@@ -145,7 +145,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:role:remove']"
+          v-hasAccess="['system:role:remove']"
           type="danger"
           plain
           icon="CircleClose"
@@ -182,7 +182,7 @@ getList()
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template #default="scope">
           <el-button
-            v-hasPermi="['system:role:remove']"
+            v-hasAccess="['system:role:remove']"
             link
             type="primary"
             icon="CircleClose"

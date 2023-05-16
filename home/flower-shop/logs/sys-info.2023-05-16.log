@@ -1,0 +1,17 @@
+00:21:43.329 [schedule-pool-3] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+00:23:38.071 [schedule-pool-2] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+22:45:21.027 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 40277 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+22:45:21.028 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+22:45:21.028 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+22:45:22.169 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+22:45:22.169 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:45:22.169 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+22:45:22.200 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:45:23.304 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-1} inited
+22:45:24.989 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+22:45:25.135 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 4.329 seconds (JVM running for 4.72)
+22:45:36.640 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:45:36.721 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Error][验证码已失效]
+22:45:40.543 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+22:45:46.126 [schedule-pool-2] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+23:45:24.690 [schedule-pool-4] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]

@@ -190,7 +190,7 @@ getList()
     <el-row :gutter="10" class="mb8">
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:post:add']"
+          v-hasAccess="['system:post:add']"
           type="primary"
           plain
           icon="Plus"
@@ -201,7 +201,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:post:edit']"
+          v-hasAccess="['system:post:edit']"
           type="success"
           plain
           icon="Edit"
@@ -213,7 +213,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:post:remove']"
+          v-hasAccess="['system:post:remove']"
           type="danger"
           plain
           icon="Delete"
@@ -225,7 +225,7 @@ getList()
       </el-col>
       <el-col :span="1.5">
         <el-button
-          v-hasPermi="['system:post:export']"
+          v-hasAccess="['system:post:export']"
           type="warning"
           plain
           icon="Download"
@@ -256,7 +256,7 @@ getList()
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template #default="scope">
           <el-button
-            v-hasPermi="['system:post:edit']"
+            v-hasAccess="['system:post:edit']"
             link
             type="primary"
             icon="Edit"
@@ -265,7 +265,7 @@ getList()
             修改
           </el-button>
           <el-button
-            v-hasPermi="['system:post:remove']"
+            v-hasAccess="['system:post:remove']"
             link
             type="primary"
             icon="Delete"
