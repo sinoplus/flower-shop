@@ -167,9 +167,6 @@ function handleDelete(row: any) {
       getList()
       proxy!.$modal.msgSuccess('删除成功')
     })
-    .catch((e: any) => {
-      console.log(e)
-    })
 }
 
 getList()
@@ -327,7 +324,7 @@ getList()
               </el-radio-group>
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType != 'F'" :span="24">
+          <el-col v-if="form.menuType !== 'F'" :span="24">
             <el-form-item label="菜单图标" prop="icon">
               <el-popover
                 v-model:visible="showChooseIcon"
@@ -342,7 +339,6 @@ getList()
                     v-click-outside="hideSelectIcon"
                     placeholder="点击选择图标"
                     readonly
-                    @blur="showSelectIcon"
                   >
                     <template #prefix>
                       <SvgIcon
@@ -371,7 +367,7 @@ getList()
               <el-input-number v-model="form.orderNum" controls-position="right" :min="0" />
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType != 'F'" :span="12">
+          <el-col v-if="form.menuType !== 'F'" :span="12">
             <el-form-item>
               <template #label>
                 <span>
@@ -392,7 +388,7 @@ getList()
               </el-radio-group>
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType != 'F'" :span="12">
+          <el-col v-if="form.menuType !== 'F'" :span="12">
             <el-form-item prop="path">
               <template #label>
                 <span>
@@ -408,7 +404,7 @@ getList()
               <el-input v-model="form.path" placeholder="请输入路由地址" />
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType == 'C'" :span="12">
+          <el-col v-if="form.menuType === 'C'" :span="12">
             <el-form-item prop="component">
               <template #label>
                 <span>
@@ -424,7 +420,7 @@ getList()
               <el-input v-model="form.component" placeholder="请输入组件路径" />
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType != 'M'" :span="12">
+          <el-col v-if="form.menuType !== 'M'" :span="12">
             <el-form-item>
               <el-input v-model="form.perms" placeholder="请输入权限标识" maxlength="100" />
               <template #label>
@@ -440,7 +436,7 @@ getList()
               </template>
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType == 'C'" :span="12">
+          <el-col v-if="form.menuType === 'C'" :span="12">
             <el-form-item>
               <el-input v-model="form.query" placeholder="请输入路由参数" maxlength="255" />
               <template #label>
@@ -456,7 +452,7 @@ getList()
               </template>
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType == 'C'" :span="12">
+          <el-col v-if="form.menuType === 'C'" :span="12">
             <el-form-item>
               <template #label>
                 <span>
@@ -479,7 +475,7 @@ getList()
               </el-radio-group>
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType != 'F'" :span="12">
+          <el-col v-if="form.menuType !== 'F'" :span="12">
             <el-form-item>
               <template #label>
                 <span>
@@ -503,7 +499,7 @@ getList()
               </el-radio-group>
             </el-form-item>
           </el-col>
-          <el-col v-if="form.menuType != 'F'" :span="12">
+          <el-col v-if="form.menuType !== 'F'" :span="12">
             <el-form-item>
               <template #label>
                 <span>

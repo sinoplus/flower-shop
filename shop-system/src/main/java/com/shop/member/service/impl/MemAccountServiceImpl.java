@@ -10,6 +10,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * 会员管理 服务层实现
+ */
 @Service
 public class MemAccountServiceImpl implements IMemAccountService {
     @Autowired

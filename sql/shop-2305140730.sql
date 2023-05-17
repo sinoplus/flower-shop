@@ -906,3 +906,64 @@ create table mem_account
     remark      varchar(500) default null comment '备注',
     primary key (account_id)
 ) engine=innodb comment = '会员信息表';
+
+-- ----------------------------
+-- 20、商品信息表
+-- ----------------------------
+drop table if exists opera_trade;
+create table opera_trade
+(
+    trade_id            bigint(20) not null auto_increment comment '商品ID',
+    trade_name          varchar(50) not null comment '商品名称',
+    main_pic            varchar(50) not null comment '商品主图',
+    vice_pic            varchar(300) comment '商品副图',
+    trade_price         double not null default 0  comment '商品价格',
+    first_category      bigint(20) not null comment '商品一级分类',
+    second_category     bigint(20) not null comment '商品二级分类',
+    discount            double comment '商品折扣',
+    content             varchar(600) comment '商品描述',
+    create_by       varchar(64)  default '' comment '创建者',
+    create_time     datetime comment '创建时间',
+    update_by       varchar(64)  default '' comment '更新者',
+    update_time     datetime comment '更新时间',
+    remark          varchar(500) default null comment '备注',
+    primary key (trade_id)
+) engine=innodb comment = '商品信息表';
+
+-- ----------------------------
+-- 21、订单信息表
+-- ----------------------------
+drop table if exists opera_order;
+create table opera_order
+(
+    order_id            bigint(20) not null auto_increment comment '订单ID',
+    order_no            varchar(50) not null comment '订单号',
+    order_time          datetime not null comment '下单时间',
+    total_price         varchar(300) comment '总价格',
+    order_by            varchar(64) default ''  comment '下单人',
+    status              char(1) default '0' not null comment '状态',
+    create_by       varchar(64)  default '' comment '创建者',
+    create_time     datetime comment '创建时间',
+    update_by       varchar(64)  default '' comment '更新者',
+    update_time     datetime comment '更新时间',
+    remark          varchar(500) default null comment '备注',
+    primary key (order_id)
+) engine=innodb comment = '订单信息表';
+
+-- ----------------------------
+-- 22、公告信息表
+-- ----------------------------
+drop table if exists opera_notice;
+create table opera_notice
+(
+    notice_id           bigint(20) not null auto_increment comment '公告ID',
+    title               varchar(50) not null comment '公告标题',
+    content             varchar(300) comment '公告内容',
+    release_time        datetime not null comment '发布时间',
+    create_by       varchar(64)  default '' comment '创建者',
+    create_time     datetime comment '创建时间',
+    update_by       varchar(64)  default '' comment '更新者',
+    update_time     datetime comment '更新时间',
+    remark          varchar(500) default null comment '备注',
+    primary key (notice_id)
+) engine=innodb comment = '公告信息表';

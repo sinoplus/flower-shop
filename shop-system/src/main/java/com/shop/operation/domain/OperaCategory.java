@@ -10,7 +10,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 /**
- * 岗位表 sys_post
+ * 种类表 opera_category
  */
 public class OperaCategory extends BaseEntity {
     private static final long serialVersionUID = 1L;

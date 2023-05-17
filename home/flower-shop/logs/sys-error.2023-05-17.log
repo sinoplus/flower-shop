@@ -1,4 +1,4 @@
-00:23:20.563 [http-nio-8888-exec-54] ERROR c.s.f.w.e.GlobalExceptionHandler - [handleRuntimeException,63] - 请求地址'/login',发生未知异常.
+01:27:33.198 [http-nio-8888-exec-35] ERROR c.s.f.w.e.GlobalExceptionHandler - [handleRuntimeException,63] - 请求地址'/login',发生未知异常.
 com.shop.common.exception.user.CaptchaExpireException: 验证码已失效
 	at com.shop.framework.web.service.SysLoginService.validateCaptcha(SysLoginService.java:104)
 	at com.shop.framework.web.service.SysLoginService.login(SysLoginService.java:60)
@@ -108,3 +108,39 @@ com.shop.common.exception.user.CaptchaExpireException: 验证码已失效
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+01:30:03.956 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field accountService in com.shop.web.controller.member.MemAccountController required a bean of type 'com.shop.member.service.IMemAccountService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shop.member.service.IMemAccountService' in your configuration.
+
+01:35:21.671 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [report,40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field accountService in com.shop.web.controller.member.MemAccountController required a bean of type 'com.shop.member.service.IMemAccountService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shop.member.service.IMemAccountService' in your configuration.
+

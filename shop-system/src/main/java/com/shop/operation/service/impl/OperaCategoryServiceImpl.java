@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * 种类信息 服务层处理
+ * 种类管理 服务层实现
  */
 @Service
 public class OperaCategoryServiceImpl implements IOperaCategoryService {

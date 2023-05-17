@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.operation.mapper.OperaTradeMapper">
+    <resultMap type="OperaTrade" id="OperaTradeResult">
+        <id property="tradeId" column="trade_id"/>
+        <result property="tradeName" column="trade_name"/>
+        <result property="mainPic" column="main_pic"/>
+        <result property="vicePic" column="vice_pic"/>
+        <result property="tradePrice" column="trade_price"/>
+        <result property="firstCategory" column="first_category"/>
+        <result property="secondCategory" column="second_category"/>
+        <result property="discount" column="discount"/>
+        <result property="content" column="content"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectTradeVo">
+        select trade_id,
+               trade_name,
+               main_pic,
+               vice_pic,
+               trade_price,
+               first_category,
+               second_category,
+               discount,
+               content,
+               create_by,
+               create_time,
+               update_by,
+               update_time,
+               remark
+        from opera_trade
+    </sql>
+
+    <select id="selectTradeList" parameterType="OperaTrade" resultMap="OperaTradeResult">
+        <include refid="selectTradeVo"/>
+        <where>
+            <if test="tradeName != null and tradeName != ''">
+                AND trade_name like concat('%', #{tradeName}, '%')
+            </if>
+        </where>
+    </select>
+
+    <select id="selectTradeAll" resultMap="OperaTradeResult">
+        <include refid="selectTradeVo"/>
+    </select>
+
+    <select id="selectTradeById" parameterType="Long" resultMap="OperaTradeResult">
+        <include refid="selectTradeVo"/>
+        where trade_id = #{tradeId}
+    </select>
+
+    <update id="updateTrade" parameterType="OperaTrade">
+        update opera_trade
+        <set>
+            <if test="tradeName != null and tradeName != ''">trade_name = #{tradeName},</if>
+            <if test="mainPic != null and mainPic != ''">main_pic = #{mainPic},</if>
+            <if test="vicePic != null and vicePic != ''">vice_pic = #{vicePic},</if>
+            <if test="tradePrice != null and tradePrice != ''">trade_price = #{tradePrice},</if>
+            <if test="firstCategory != null and firstCategory != ''">first_category = #{firstCategory},</if>
+            <if test="secondCategory != null and secondCategory != ''">second_category = #{secondCategory},</if>
+            <if test="discount != null and discount != ''">discount = #{discount},</if>
+            <if test="content != null and content != ''">content = #{content},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            update_time = sysdate()
+        </set>
+        where trade_id = #{tradeId}
+    </update>
+
+    <insert id="insertTrade" parameterType="OperaTrade" useGeneratedKeys="true" keyProperty="tradeId">
+        insert into opera_trade(
+        <if test="tradeId != null and tradeId != 0">trade_id,</if>
+        <if test="tradeName != null and tradeName != ''">trade_name,</if>
+        <if test="mainPic != null and mainPic != ''">main_pic,</if>
+        <if test="vicePic != null and vicePic != ''">vice_pic,</if>
+        <if test="tradePrice != null and tradePrice != ''">trade_price,</if>
+        <if test="firstCategory != null and firstCategory != ''">first_category,</if>
+        <if test="secondCategory != null and secondCategory != ''">second_category,</if>
+        <if test="discount != null and discount != ''">discount,</if>
+        <if test="content != null and content != ''">content,</if>
+        <if test="remark != null and remark != ''">remark,</if>
+        <if test="createBy != null and createBy != ''">create_by,</if>
+        create_time
+        )values(
+        <if test="tradeId != null and tradeId != 0">#{tradeId},</if>
+        <if test="tradeName != null and tradeName != ''">#{tradeName},</if>
+        <if test="mainPic != null and mainPic != ''">#{mainPic},</if>
+        <if test="vicePic != null and vicePic != ''">#{vicePic},</if>
+        <if test="tradePrice != null and tradePrice != ''">#{tradePrice},</if>
+        <if test="firstCategory != null and firstCategory != ''">#{firstCategory},</if>
+        <if test="secondCategory != null and secondCategory != ''">#{secondCategory},</if>
+        <if test="discount != null and discount != ''">#{discount},</if>
+        <if test="content != null and content != ''">#{content},</if>
+        <if test="remark != null and remark != ''">#{remark},</if>
+        <if test="createBy != null and createBy != ''">#{createBy},</if>
+        sysdate()
+        )
+    </insert>
+
+    <delete id="deleteTradeById" parameterType="Long">
+        delete
+        from opera_trade
+        where trade_id = #{tradeId}
+    </delete>
+
+    <delete id="deleteTradeByIds" parameterType="Long">
+        delete from opera_trade where trade_id in
+        <foreach collection="array" item="tradeId" open="(" separator="," close=")">
+            #{tradeId}
+        </foreach>
+    </delete>
+</mapper>
