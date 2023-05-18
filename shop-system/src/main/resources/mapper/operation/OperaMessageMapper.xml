@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.operation.mapper.OperaMessageMapper">
+    <resultMap type="OperaMessage" id="OperaMessageResult">
+        <id property="messageId" column="message_id"/>
+        <result property="name" column="name"/>
+        <result property="phone" column="phone"/>
+        <result property="content" column="content"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectMessageVo">
+        select message_id,
+               name,
+               phone,
+               content,
+               create_by,
+               create_time,
+               update_by,
+               update_time,
+               remark
+        from opera_message
+    </sql>
+
+    <select id="selectMessageList" parameterType="OperaMessage" resultMap="OperaMessageResult">
+        <include refid="selectMessageVo"/>
+        <where>
+            <if test="name != null and name != ''">
+                AND name = #{name}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectMessageAll" resultMap="OperaMessageResult">
+        <include refid="selectMessageVo"/>
+    </select>
+
+    <select id="selectMessageById" parameterType="Long" resultMap="OperaMessageResult">
+        <include refid="selectMessageVo"/>
+        where message_id = #{messageId}
+    </select>
+
+    <update id="updateMessage" parameterType="OperaMessage">
+        update opera_message
+        <set>
+            <if test="name != null and name != ''">name = #{name},</if>
+            <if test="phone != null and phone != ''">phone = #{phone},</if>
+            <if test="content != null and content != ''">content = #{content},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            update_time = sysdate()
+        </set>
+        where message_id = #{messageId}
+    </update>
+
+    <insert id="insertMessage" parameterType="OperaMessage" useGeneratedKeys="true" keyProperty="messageId">
+        insert into opera_message(
+        <if test="messageId != null and messageId != 0">message_id,</if>
+        <if test="name != null and name != ''">name,</if>
+        <if test="phone != null and phone != ''">phone,</if>
+        <if test="content != null and content != ''">content,</if>
+        <if test="remark != null and remark != ''">remark,</if>
+        <if test="createBy != null and createBy != ''">create_by,</if>
+        create_time
+        )values(
+        <if test="messageId != null and messageId != 0">#{messageId},</if>
+        <if test="name != null and name != ''">#{name},</if>
+        <if test="phone != null and phone != ''">#{phone},</if>
+        <if test="content != null and content != ''">#{content},</if>
+        <if test="remark != null and remark != ''">#{remark},</if>
+        <if test="createBy != null and createBy != ''">#{createBy},</if>
+        sysdate()
+        )
+    </insert>
+
+    <delete id="deleteMessageById" parameterType="Long">
+        delete
+        from opera_message
+        where message_id = #{messageId}
+    </delete>
+
+    <delete id="deleteMessageByIds" parameterType="Long">
+        delete from opera_message where message_id in
+        <foreach collection="array" item="messageId" open="(" separator="," close=")">
+            #{messageId}
+        </foreach>
+    </delete>
+</mapper>
