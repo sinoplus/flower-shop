@@ -153,6 +153,13 @@
                 <artifactId>shop-common</artifactId>
                 <version>${shop.version}</version>
             </dependency>
+
+            <!-- 代码生成-->
+            <dependency>
+                <groupId>com.shop</groupId>
+                <artifactId>shop-generator</artifactId>
+                <version>${shop.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -161,6 +168,7 @@
         <module>shop-system</module>
         <module>shop-framework</module>
         <module>shop-admin</module>
+        <module>shop-generator</module>
     </modules>
     <packaging>pom</packaging>
 

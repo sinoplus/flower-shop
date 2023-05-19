@@ -84,7 +84,7 @@ function handleGenTable(row: any) {
     })
   }
   else {
-    proxy?.$download.zip(`/tool/gen/batchGenCode?tables=${tbNames}`, 'ruoyi.zip')
+    proxy?.$download.zip(`/tool/gen/batchGenCode?tables=${tbNames}`, 'shop.zip')
   }
 }
 /** 同步数据库操作 */

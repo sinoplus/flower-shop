@@ -1,3 +1,9 @@
-00:23:20.561 [schedule-pool-2] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Error][验证码已失效]
-00:23:24.860 [schedule-pool-4] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
-01:07:41.216 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:02:17.803 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:31:28.608 [restartedMain] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+21:51:20.900 [Thread-11] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:17:55.211 [Thread-20] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:26:24.437 [Thread-31] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:31:55.911 [Thread-35] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:33:24.428 [Thread-43] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:34:30.705 [Thread-54] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:34:42.057 [Thread-65] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====

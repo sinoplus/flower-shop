@@ -46,6 +46,12 @@
             <groupId>com.shop</groupId>
             <artifactId>shop-framework</artifactId>
         </dependency>
+
+        <!-- 代码生成-->
+        <dependency>
+            <groupId>com.shop</groupId>
+            <artifactId>shop-generator</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

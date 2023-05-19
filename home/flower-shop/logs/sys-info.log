@@ -1,3 +1,228 @@
-00:23:20.561 [schedule-pool-2] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Error][验证码已失效]
-00:23:24.860 [schedule-pool-4] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
-01:07:41.216 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:02:17.803 [schedule-pool-1] INFO  sys-user - [run,50] - [127.0.0.1]内网IP[admin][Success][登录成功]
+19:31:24.990 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 92693 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+19:31:24.992 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+19:31:24.993 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+19:31:26.038 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+19:31:26.039 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:31:26.039 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+19:31:26.067 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:31:27.142 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-1} inited
+19:31:28.603 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8888"]
+19:31:28.608 [restartedMain] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+19:31:28.610 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-1} closing ...
+19:31:28.614 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-1} closed
+19:31:28.733 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-8888"]
+19:31:28.734 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+19:31:28.736 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-8888"]
+19:31:28.737 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-8888"]
+21:51:20.900 [Thread-11] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+21:51:20.904 [Thread-11] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-1} closing ...
+21:51:20.905 [Thread-11] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-1} closed
+22:58:16.565 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+22:58:16.567 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+22:58:16.907 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:58:16.907 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+22:58:16.912 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:58:17.210 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,211] - dynamic-datasource start closing ....
+22:58:17.210 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource all closed success,bye
+22:58:17.215 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+22:58:19.170 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+22:58:19.170 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+22:58:19.547 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:58:19.547 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+22:58:19.551 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:58:20.625 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-2} inited
+22:58:20.781 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 72929 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+22:58:20.784 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+22:58:20.786 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+22:58:21.869 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 2.736 seconds (JVM running for 23356.893)
+22:58:22.039 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+22:58:22.040 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:58:22.040 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+22:58:22.071 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:58:22.813 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+22:58:22.826 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:04:04.198 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75824 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:04:04.200 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:04:04.202 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:04:05.238 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:04:05.238 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:04:05.239 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:04:05.268 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:04:05.938 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:04:05.947 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:07:13.179 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 77410 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:07:13.181 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:07:13.182 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:07:14.263 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:07:14.264 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:07:14.264 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:07:14.293 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:07:14.965 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:07:14.974 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:11:26.090 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 79401 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:11:26.093 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:11:26.095 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:11:27.224 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:11:27.224 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:11:27.225 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:11:27.254 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:11:27.948 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:11:27.966 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:13:12.036 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 80334 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:13:12.038 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:13:12.039 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:13:13.098 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:13:13.098 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:13:13.099 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:13:13.127 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:13:13.805 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:13:13.813 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:15:54.790 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 81664 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:15:54.792 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:15:54.793 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:15:55.820 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:15:55.820 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:15:55.820 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:15:55.849 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:15:56.525 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:15:56.534 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:17:54.773 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 82668 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:17:54.774 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:17:54.775 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:17:55.211 [Thread-20] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:17:55.214 [Thread-20] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-2} closing ...
+23:17:55.215 [Thread-20] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-2} closed
+23:17:55.639 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:17:55.639 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:17:55.989 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:17:55.989 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:17:55.990 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:17:56.013 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:17:56.014 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:17:56.018 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:17:56.029 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:17:56.630 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-3} inited
+23:17:56.936 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:17:56.954 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:17:57.996 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 2.391 seconds (JVM running for 24532.999)
+23:22:45.379 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 85000 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:22:45.381 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:22:45.381 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:22:46.403 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:22:46.404 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:22:46.404 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:22:46.432 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:22:47.116 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:22:47.126 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:26:24.437 [Thread-31] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:26:24.442 [Thread-31] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-3} closing ...
+23:26:24.522 [Thread-31] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-3} closed
+23:26:48.000 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:26:48.000 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:26:48.384 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:26:48.385 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:26:48.389 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:26:49.256 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-4} inited
+23:26:49.721 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 87034 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:26:49.724 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:26:49.726 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:26:50.507 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 2.561 seconds (JVM running for 25065.502)
+23:26:50.837 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:26:50.837 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:26:50.837 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:26:50.867 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:26:51.564 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:26:51.573 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:31:55.911 [Thread-35] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:31:55.913 [Thread-35] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-4} closing ...
+23:31:55.916 [Thread-35] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-4} closed
+23:32:34.035 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:32:34.035 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:32:34.346 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:32:34.346 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:32:34.357 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:32:34.667 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,211] - dynamic-datasource start closing ....
+23:32:34.667 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource all closed success,bye
+23:32:34.670 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:32:37.034 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:32:37.034 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:32:37.388 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:32:37.389 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:32:37.393 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:32:38.690 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-5} inited
+23:32:39.439 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 90063 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:32:39.440 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:32:39.448 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:32:40.168 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 3.164 seconds (JVM running for 25415.156)
+23:32:40.614 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:32:40.615 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:32:40.615 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:32:40.643 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:32:41.329 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:32:41.338 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:33:24.428 [Thread-43] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:33:24.434 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-5} closing ...
+23:33:24.458 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-5} closed
+23:33:30.162 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:33:30.163 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:33:30.393 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:33:30.394 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:33:30.398 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:33:30.652 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,211] - dynamic-datasource start closing ....
+23:33:30.653 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,215] - dynamic-datasource all closed success,bye
+23:33:30.653 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:33:33.454 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:33:33.455 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:33:34.058 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:33:34.059 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:33:34.063 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:33:35.645 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-6} inited
+23:33:36.132 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:33:36.138 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 90522 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:33:36.141 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:33:37.138 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 3.732 seconds (JVM running for 25472.126)
+23:33:37.311 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:33:37.311 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:33:37.311 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:33:37.342 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:33:38.059 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:33:38.067 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:34:30.705 [Thread-54] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:34:30.711 [Thread-54] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-6} closing ...
+23:34:30.715 [Thread-54] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-6} closed
+23:34:30.748 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 91040 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:34:30.750 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:34:30.751 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:34:31.181 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:34:31.181 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:34:31.867 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:34:31.867 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:34:31.872 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:34:32.375 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:34:32.376 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:34:32.376 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:34:32.406 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:34:32.415 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-7} inited
+23:34:33.148 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:34:33.159 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+23:34:33.430 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 2.293 seconds (JVM running for 25528.417)
+23:34:42.057 [Thread-65] INFO  sys-user - [shutdownAsyncManager,26] - ====关闭后台任务任务线程池====
+23:34:42.059 [Thread-65] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-7} closing ...
+23:34:42.062 [Thread-65] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-7} closed
+23:34:51.969 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 75179 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:34:51.969 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:34:52.407 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:34:52.407 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:34:52.412 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:34:53.730 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-8} inited
+23:34:54.030 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:34:54.057 [restartedMain] INFO  c.s.ShopApplication - [logStarting,55] - Starting ShopApplication using Java 1.8.0_372 on GenedeMacBook-Pro.local with PID 91238 (/Users/gene/Development/project/BackEnd/flower-shop/shop-admin/target/classes started by gene in /Users/gene/Development/project/BackEnd/flower-shop)
+23:34:54.058 [restartedMain] INFO  c.s.ShopApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+23:34:55.142 [restartedMain] INFO  c.s.ShopApplication - [logStarted,61] - Started ShopApplication in 3.214 seconds (JVM running for 25550.128)
+23:34:55.434 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8888"]
+23:34:55.435 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:34:55.435 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:34:55.466 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:34:56.146 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-0} closing ...
+23:34:56.155 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
