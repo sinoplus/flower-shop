@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4c56b1b6-a46a-4546-8775-09f66f02c914" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/member/MemAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/member/MemAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaNoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaNoticeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaTradeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/com/shop/web/controller/operation/OperaTradeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/controller/GenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/controller/GenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/domain/GenTableColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/domain/GenTableColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/service/GenTableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/service/GenTableServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/util/GenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/util/GenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/util/VelocityInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/util/VelocityInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/util/VelocityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator/util/VelocityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/java/controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/java/controller.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/java/domain.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/java/domain.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/java/sub-domain.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/java/sub-domain.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/index-tree.vue.vm" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/index-tree.vue.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/index.vue.vm" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/index.vue.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/v3/index-tree.vue.vm" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/v3/index-tree.vue.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/v3/index.vue.vm" beforeDir="false" afterPath="$PROJECT_DIR$/shop-generator/src/main/resources/vm/vue/v3/index.vue.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/.eslintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/postcss.config.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/postcss.config.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/public/vite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/public/vite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/member/account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/member/account.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/cache.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/cache.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/job.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/job.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/jobLog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/jobLog.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/logininfor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/logininfor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/online.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/online.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/operlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/operlog.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/monitor/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/operation/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/operation/category.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/dept.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/dept.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/dict/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/dict/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/dict/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/dict/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/notice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/notice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/post.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/role.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/role.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/system/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/system/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/api/tool/gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/api/tool/gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/app.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/404.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/404.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/bug.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/bug.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/build.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/build.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/button.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/button.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/cascader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/cascader.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/checkbox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/checkbox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/clipboard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/clipboard.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/code.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/code.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/color.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/color.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/component.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/component.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/dashboard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/dashboard.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/date-range.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/date-range.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/date.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/date.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/dict.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/dict.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/documentation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/documentation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/download.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/drag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/drag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/druid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/druid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/edit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/edit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/education.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/education.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/email.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/email.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/example.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/example.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/excel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/excel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/exit-fullscreen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/exit-fullscreen.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/eye-open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/eye-open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/eye.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/eye.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/form.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/form.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/fullscreen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/fullscreen.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/github.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/github.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/guide.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/guide.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/input.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/input.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/international.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/international.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/job.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/job.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/language.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/language.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/list.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/list.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/lock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/lock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/log.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/log.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/logininfor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/logininfor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/message.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/message.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/money.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/money.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/monitor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/monitor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/nested.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/nested.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/number.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/number.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/online.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/online.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/password.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/password.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/pdf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/pdf.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/people.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/people.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/peoples.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/peoples.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/post.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/post.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/qq.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/qq.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/question.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/question.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/radio.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/radio.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/rate.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/rate.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/redis-list.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/redis-list.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/redis.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/redis.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/row.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/row.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/select.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/server.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/server.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/shopping.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/shopping.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/size.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/size.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/skill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/skill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/slider.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/slider.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/star.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/swagger.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/swagger.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/switch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/switch.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/system.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/system.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/table.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/table.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/textarea.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/textarea.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/theme.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/theme.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/time-range.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/time-range.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/time.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/time.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tool.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tool.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tree-table.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tree-table.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tree.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/tree.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/upload.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/upload.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/user.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/validCode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/validCode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/wechat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/wechat.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/zip.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/icons/svg/zip.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/images/dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/images/dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/images/light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/images/light.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/logo/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/logo/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/btn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/element-ui.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/element-ui.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/shop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/shop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/transition.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/variables.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/assets/styles/variables.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Breadcrumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Breadcrumb/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/day.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/day.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/hour.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/hour.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/min.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/min.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/month.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/month.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/result.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/result.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/second.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/second.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/week.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/week.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/year.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Crontab/year.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/DictTag/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/DictTag/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Editor/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/FileUpload/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/FileUpload/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Hamburger/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Hamburger/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/HeaderSearch/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/HeaderSearch/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/IconSelect/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/IconSelect/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/IconSelect/requireIcons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/IconSelect/requireIcons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/ImagePreview/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/ImagePreview/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/ImageUpload/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/ImageUpload/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Pagination/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Pagination/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/ParentView/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/ParentView/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/RightToolbar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/RightToolbar/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/Screenfull/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/Screenfull/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/SizeSelect/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/SizeSelect/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/SvgIcon/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/SvgIcon/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/SvgIcon/svgicon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/SvgIcon/svgicon.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/TopNav/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/TopNav/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/TreeSelect/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/TreeSelect/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/components/iFrame/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/components/iFrame/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/directive/common/copyText.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/directive/common/copyText.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/directive/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/directive/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/directive/permission/hasAccess.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/directive/permission/hasAccess.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/directive/permission/hasRole.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/directive/permission/hasRole.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/AppMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/AppMain.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/IframeToggle/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/IframeToggle/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/InnerLink/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/InnerLink/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Settings/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Settings/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/Link.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/Link.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/Logo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/Logo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/SidebarItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/SidebarItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/Sidebar/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/TagsView/ScrollPane.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/TagsView/ScrollPane.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/TagsView/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/TagsView/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/layout/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/permission.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/permission.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/plugins/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/plugins/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/plugins/cache.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/plugins/cache.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/plugins/download.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/plugins/download.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/plugins/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/plugins/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/plugins/modal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/plugins/modal.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/plugins/tab.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/plugins/tab.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/settings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/dict.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/dict.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/permission.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/permission.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/settings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/tagsView.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/tagsView.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/store/modules/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/typings/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/typings/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/dict.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/dict.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/dynamicTitle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/dynamicTitle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/errorCode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/errorCode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/jsencrypt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/jsencrypt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/scroll-to.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/scroll-to.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/utils/validate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/utils/validate.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/error/401.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/error/401.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/error/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/error/404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/member/account/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/member/account/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/cache/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/cache/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/cache/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/cache/list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/druid/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/druid/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/logininfor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/logininfor/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/online/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/online/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/operlog/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/operlog/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/server/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/monitor/server/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/operation/category/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/operation/category/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/operation/category/sub-category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/operation/category/sub-category.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/redirect/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/redirect/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/config/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/config/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/dept/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/dept/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/dict/data.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/dict/data.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/dict/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/dict/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/menu/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/menu/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/notice/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/notice/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/post/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/post/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/role/authUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/role/authUser.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/role/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/role/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/role/selectUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/role/selectUser.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/authRole.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/authRole.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/resetPwd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/resetPwd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/userAvatar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/userAvatar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/userInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/system/user/profile/userInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/basicInfoForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/basicInfoForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/editTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/editTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/genInfoForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/genInfoForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/importTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/importTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/gen/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/swagger/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/src/views/tool/swagger/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/tailwind.config.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/tailwind.config.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/tsconfig.node.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/tsconfig.node.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/auto-import.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/auto-import.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/components.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/compression.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/compression.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/setup-extend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/setup-extend.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/svg-icon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shop-ui-admin/vite/plugins/svg-icon.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/shop-2305140730.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/shop-2305140730.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2Po1tXg2yWbssw7tM4DoeOqVi7T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gene/Development/project/BackEnd/flower-shop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;48018d94627327b16dbc7cf9798081d6&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/gene/Development/project/BackEnd/flower-shop/shop-ui-admin/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop-ui-admin/src/views/tool" />
+      <recent name="$PROJECT_DIR$/shop-generator/src/main/java/com/shop/generator" />
+      <recent name="$PROJECT_DIR$/shop-generator/src/main/resources/mapper/generator" />
+      <recent name="$PROJECT_DIR$/shop-generator/src/main/resources/vm" />
+      <recent name="$PROJECT_DIR$/shop-generator/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop-generator/src/main/resources/mybatis" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shop.operation.service.impl" />
+      <recent name="com.shop.operation.service" />
+      <recent name="com.shop.operation.mapper" />
+      <recent name="com.shop.operation.domain" />
+      <recent name="com.shop.web.controller.operation" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shop-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shop.ShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c56b1b6-a46a-4546-8775-09f66f02c914" name="Changes" comment="" />
+      <created>1684108835559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684108835559</updated>
+      <workItem from="1684108836917" duration="2699000" />
+      <workItem from="1684149869608" duration="48190000" />
+      <workItem from="1684423937383" duration="10259000" />
+      <workItem from="1684503401893" duration="7654000" />
+      <workItem from="1684511561640" duration="201000" />
+      <workItem from="1684511774239" duration="1204000" />
+      <workItem from="1684513089406" duration="2810000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

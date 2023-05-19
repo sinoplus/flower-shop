@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 
 import Cookies from 'js-cookie'
 
@@ -26,7 +26,7 @@ import directive from './directive' // directive
 
 // 注册指令
 import plugins from './plugins' // plugins
-import { download } from '@/utils/request'
+import {download} from '@/utils/request'
 
 // svg图标
 import 'virtual:svg-icons-register'
@@ -35,14 +35,14 @@ import elementIcons from '@/components/SvgIcon/svgicon'
 
 import './permission' // permission control
 
-import { useDict } from '@/utils/dict'
+import {useDict} from '@/utils/dict'
 import {
-  addDateRange,
-  handleTree,
-  parseTime,
-  resetForm,
-  selectDictLabel,
-  selectDictLabels,
+	addDateRange,
+	handleTree,
+	parseTime,
+	resetForm,
+	selectDictLabel,
+	selectDictLabels,
 } from '@/utils/helpers'
 
 // 分页组件
@@ -101,9 +101,9 @@ directive(app)
 
 // 使用element-plus 并且设置全局的大小
 app.use(ElementPlus, {
-  locale,
-  // 支持 large、default、small
-  size: Cookies.get('size') || 'default',
+	locale,
+	// 支持 large、default、small
+	size: Cookies.get('size') || 'default',
 })
 
 app.mount('#app')

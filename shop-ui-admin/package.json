@@ -1,16 +1,16 @@
 {
-  "name": "shop-ui-admin",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "dependencies": {
+	"name": "shop-ui-admin",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc && vite build",
+		"preview": "vite preview",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix"
+	},
+	"dependencies": {
 		"@element-plus/icons-vue": "2.0.10",
 		"@vueup/vue-quill": "1.1.0",
 		"@vueuse/core": "9.5.0",
@@ -27,8 +27,8 @@
 		"vue": "3.2.45",
 		"vue-cropper": "1.0.3",
 		"vue-router": "4.1.4"
-  },
-  "devDependencies": {
+	},
+	"devDependencies": {
 		"@antfu/eslint-config": "^0.38.6",
 		"@types/file-saver": "^2.0.5",
 		"@types/js-cookie": "^3.0.2",
@@ -49,5 +49,5 @@
 		"vite-plugin-compression": "^0.5.1",
 		"vite-plugin-svg-icons": "2.0.1",
 		"vite-plugin-vue-setup-extend": "^0.4.0"
-  }
+	}
 }

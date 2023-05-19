@@ -55,9 +55,9 @@ public class GenController extends BaseController {
         List<GenTable> tables = genTableService.selectGenTableAll();
         List<GenTableColumn> list = genTableColumnService.selectGenTableColumnListByTableId(tableId);
         Map<String, Object> map = new HashMap<String, Object>();
-        map.put("info" , table);
-        map.put("rows" , list);
-        map.put("tables" , tables);
+        map.put("info", table);
+        map.put("rows", list);
+        map.put("tables", tables);
         return success(map);
     }
 
@@ -89,7 +89,7 @@ public class GenController extends BaseController {
      * 导入表结构（保存）
      */
     @PreAuthorize("@ss.hasPermi('tool:gen:import')")
-    @Log(title = "代码生成" , businessType = BusinessType.IMPORT)
+    @Log(title = "代码生成", businessType = BusinessType.IMPORT)
     @PostMapping("/importTable")
     public AjaxResult importTableSave(String tables) {
         String[] tableNames = Convert.toStrArray(tables);
@@ -103,7 +103,7 @@ public class GenController extends BaseController {
      * 修改保存代码生成业务
      */
     @PreAuthorize("@ss.hasPermi('tool:gen:edit')")
-    @Log(title = "代码生成" , businessType = BusinessType.UPDATE)
+    @Log(title = "代码生成", businessType = BusinessType.UPDATE)
     @PutMapping
     public AjaxResult editSave(@Validated @RequestBody GenTable genTable) {
         genTableService.validateEdit(genTable);
@@ -115,7 +115,7 @@ public class GenController extends BaseController {
      * 删除代码生成
      */
     @PreAuthorize("@ss.hasPermi('tool:gen:remove')")
-    @Log(title = "代码生成" , businessType = BusinessType.DELETE)
+    @Log(title = "代码生成", businessType = BusinessType.DELETE)
     @DeleteMapping("/{tableIds}")
     public AjaxResult remove(@PathVariable Long[] tableIds) {
         genTableService.deleteGenTableByIds(tableIds);
@@ -136,7 +136,7 @@ public class GenController extends BaseController {
      * 生成代码（下载方式）
      */
     @PreAuthorize("@ss.hasPermi('tool:gen:code')")
-    @Log(title = "代码生成" , businessType = BusinessType.GENCODE)
+    @Log(title = "代码生成", businessType = BusinessType.GENCODE)
     @GetMapping("/download/{tableName}")
     public void download(HttpServletResponse response, @PathVariable("tableName") String tableName) throws IOException {
         byte[] data = genTableService.downloadCode(tableName);
@@ -147,7 +147,7 @@ public class GenController extends BaseController {
      * 生成代码（自定义路径）
      */
     @PreAuthorize("@ss.hasPermi('tool:gen:code')")
-    @Log(title = "代码生成" , businessType = BusinessType.GENCODE)
+    @Log(title = "代码生成", businessType = BusinessType.GENCODE)
     @GetMapping("/genCode/{tableName}")
     public AjaxResult genCode(@PathVariable("tableName") String tableName) {
         genTableService.generatorCode(tableName);
@@ -158,7 +158,7 @@ public class GenController extends BaseController {
      * 同步数据库
      */
     @PreAuthorize("@ss.hasPermi('tool:gen:edit')")
-    @Log(title = "代码生成" , businessType = BusinessType.UPDATE)
+    @Log(title = "代码生成", businessType = BusinessType.UPDATE)
     @GetMapping("/synchDb/{tableName}")
     public AjaxResult synchDb(@PathVariable("tableName") String tableName) {
         genTableService.synchDb(tableName);
@@ -169,7 +169,7 @@ public class GenController extends BaseController {
      * 批量生成代码
      */
     @PreAuthorize("@ss.hasPermi('tool:gen:code')")
-    @Log(title = "代码生成" , businessType = BusinessType.GENCODE)
+    @Log(title = "代码生成", businessType = BusinessType.GENCODE)
     @GetMapping("/batchGenCode")
     public void batchGenCode(HttpServletResponse response, String tables) throws IOException {
         String[] tableNames = Convert.toStrArray(tables);
@@ -182,10 +182,10 @@ public class GenController extends BaseController {
      */
     private void genCode(HttpServletResponse response, byte[] data) throws IOException {
         response.reset();
-        response.addHeader("Access-Control-Allow-Origin" , "*");
-        response.addHeader("Access-Control-Expose-Headers" , "Content-Disposition");
-        response.setHeader("Content-Disposition" , "attachment; filename=\"shop.zip\"");
-        response.addHeader("Content-Length" , "" + data.length);
+        response.addHeader("Access-Control-Allow-Origin", "*");
+        response.addHeader("Access-Control-Expose-Headers", "Content-Disposition");
+        response.setHeader("Content-Disposition", "attachment; filename=\"shop.zip\"");
+        response.addHeader("Content-Length", "" + data.length);
         response.setContentType("application/octet-stream; charset=UTF-8");
         IOUtils.write(data, response.getOutputStream());
     }

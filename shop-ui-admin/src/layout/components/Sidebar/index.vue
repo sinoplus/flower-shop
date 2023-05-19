@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import {computed} from 'vue'
+import {useRoute} from 'vue-router'
 import Logo from './Logo.vue'
 import SidebarItem from './SidebarItem.vue'
 import variables from '@/assets/styles/variables.module.scss'
@@ -20,44 +20,44 @@ const theme = computed(() => settingsStore.theme)
 const isCollapse = computed(() => !appStore.sidebar.opened)
 
 const activeMenu = computed(() => {
-  const { meta, path } = route
-  // if set path, the sidebar will highlight the path you set
-  if (meta.activeMenu)
-    return meta.activeMenu
+	const {meta, path} = route
+	// if set path, the sidebar will highlight the path you set
+	if (meta.activeMenu)
+		return meta.activeMenu
 
-  return path
+	return path
 })
 </script>
 
 <template>
-  <div
-    :class="{ 'has-logo': showLogo }"
-    :style="{
+	<div
+		:class="{ 'has-logo': showLogo }"
+		:style="{
       backgroundColor:
         sideTheme === 'theme-dark' ? variables.menuBackground : variables.menuLightBackground,
     }"
-  >
-    <Logo v-if="showLogo" :collapse="isCollapse" />
-    <el-scrollbar :class="sideTheme" wrap-class="scrollbar-wrapper">
-      <el-menu
-        :default-active="activeMenu"
-        :collapse="isCollapse"
-        :background-color="
+	>
+		<Logo v-if="showLogo" :collapse="isCollapse"/>
+		<el-scrollbar :class="sideTheme" wrap-class="scrollbar-wrapper">
+			<el-menu
+				:default-active="activeMenu"
+				:collapse="isCollapse"
+				:background-color="
           sideTheme === 'theme-dark' ? variables.menuBackground : variables.menuLightBackground
         "
-        :text-color="sideTheme === 'theme-dark' ? variables.menuColor : variables.menuLightColor"
-        :unique-opened="true"
-        :active-text-color="theme"
-        :collapse-transition="false"
-        mode="vertical"
-      >
-        <SidebarItem
-          v-for="(routeItem, index) in sidebarRouters"
-          :key="routeItem.path + index"
-          :item="routeItem"
-          :base-path="routeItem.path"
-        />
-      </el-menu>
-    </el-scrollbar>
-  </div>
+				:text-color="sideTheme === 'theme-dark' ? variables.menuColor : variables.menuLightColor"
+				:unique-opened="true"
+				:active-text-color="theme"
+				:collapse-transition="false"
+				mode="vertical"
+			>
+				<SidebarItem
+					v-for="(routeItem, index) in sidebarRouters"
+					:key="routeItem.path + index"
+					:item="routeItem"
+					:base-path="routeItem.path"
+				/>
+			</el-menu>
+		</el-scrollbar>
+	</div>
 </template>

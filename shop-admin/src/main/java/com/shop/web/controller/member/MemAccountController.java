@@ -39,6 +39,7 @@ public class MemAccountController extends BaseController {
 
     /**
      * 新增用户
+     *
      * @param account
      * @return
      */

@@ -213,10 +213,10 @@ insert into sys_menu
 values ('3', '系统工具', '0', '5', 'tool', null, '', 1, 0, 'M', '0', '0', '', 'tool', 'admin', sysdate(), '', null,
         '系统工具目录');
 insert into sys_menu
-values ('4', '会员管理', '0', '1', 'member', null, '', 1, 0, 'M', '0', '0', '', 'member', 'admin', sysdate(), '', null,
+values ('4', '会员管理', '0', '1', 'member', null, '', 1, 0, 'M', '0', '0', '', 'peoples', 'admin', sysdate(), '', null,
         '会员管理目录');
 insert into sys_menu
-values ('5', '运营管理', '0', '2', 'operation', null, '', 1, 0, 'M', '0', '0', '', 'operation', 'admin', sysdate(), '',
+values ('5', '运营管理', '0', '2', 'operation', null, '', 1, 0, 'M', '0', '0', '', 'druid', 'admin', sysdate(), '',
         null, '运营管理目录');
 -- 二级菜单
 insert into sys_menu
@@ -275,10 +275,10 @@ values ('117', '系统接口', '3', '3', 'swagger', 'tool/swagger/index', '', 1,
         'swagger', 'admin', sysdate(), '', null, '系统接口菜单');
 insert into sys_menu
 values ('118', '会员列表', '4', '1', 'account', 'member/account/index', '', 1, 0, 'C', '0', '0', 'member:account:list',
-        'member', 'admin', sysdate(), '', null, '会员列表菜单');
+        'user', 'admin', sysdate(), '', null, '会员列表菜单');
 insert into sys_menu
 values ('119', '种类管理', '5', '1', 'category', 'operation/category/index', '', 1, 0, 'C', '0', '0',
-        'operation:category:list', 'member', 'admin', sysdate(), '', null, '种类管理菜单');
+        'operation:category:list', 'form', 'admin', sysdate(), '', null, '种类管理菜单');
 -- 三级菜单
 insert into sys_menu
 values ('500', '操作日志', '108', '1', 'operlog', 'monitor/operlog/index', '', 1, 0, 'C', '0', '0',

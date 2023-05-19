@@ -39,6 +39,7 @@ public class OperaTradeController extends BaseController {
 
     /**
      * 新增商品
+     *
      * @param trade
      * @return
      */

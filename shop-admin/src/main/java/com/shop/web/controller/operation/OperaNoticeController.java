@@ -39,6 +39,7 @@ public class OperaNoticeController extends BaseController {
 
     /**
      * 新增公告
+     *
      * @param notice
      * @return
      */
@@ -51,6 +52,7 @@ public class OperaNoticeController extends BaseController {
 
     /**
      * 编辑公告
+     *
      * @param notice
      * @return
      */
@@ -63,6 +65,7 @@ public class OperaNoticeController extends BaseController {
 
     /**
      * 删除公告
+     *
      * @param noticeIds
      * @return
      */

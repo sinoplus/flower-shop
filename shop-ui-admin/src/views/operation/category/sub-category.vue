@@ -1,27 +1,28 @@
 <script setup name="SubCategory" lang="ts">
-import type { ComponentInternalInstance } from 'vue'
-import { computed, getCurrentInstance, reactive, ref, toRefs, watch } from 'vue'
-import { addCategory, delCategory, getCategory, listCategory, updateCategory } from '@/api/operation/category'
-import { parseTime } from '@/utils/helpers'
+import type {ComponentInternalInstance} from 'vue'
+import {computed, getCurrentInstance, reactive, ref, toRefs, watch} from 'vue'
+import {addCategory, delCategory, getCategory, listCategory, updateCategory} from '@/api/operation/category'
+import {parseTime} from '@/utils/helpers'
 
 const props = defineProps({
-  data: {
-    required: true,
-    type: Object,
-  },
-  open: {
-    required: true,
-    type: Boolean,
-  },
-  close: {
-    type: Function,
-    default: () => { },
-  },
+	data: {
+		required: true,
+		type: Object,
+	},
+	open: {
+		required: true,
+		type: Boolean,
+	},
+	close: {
+		type: Function,
+		default: () => {
+		},
+	},
 })
 
 const emit = defineEmits(['update:open'])
 
-const { proxy } = getCurrentInstance() as ComponentInternalInstance
+const {proxy} = getCurrentInstance() as ComponentInternalInstance
 
 const categoryList = ref<any[]>([])
 const editOpen = ref(false)
@@ -33,225 +34,231 @@ const total = ref(0)
 const editTitle = ref('')
 
 const data = reactive<{
-  form: any
-  queryParams: any
-  rules: any
+	form: any
+	queryParams: any
+	rules: any
 }>({
-  form: {},
-  queryParams: {
-    pageNum: 1,
-    pageSize: 10,
-  },
-  rules: {
-    categoryName: [{ required: true, message: '种类名称不能为空', trigger: 'blur' }],
-    categoryCode: [{ required: true, message: '种类编码不能为空', trigger: 'blur' }],
-  },
+	form: {},
+	queryParams: {
+		pageNum: 1,
+		pageSize: 10,
+	},
+	rules: {
+		categoryName: [{required: true, message: '种类名称不能为空', trigger: 'blur'}],
+		categoryCode: [{required: true, message: '种类编码不能为空', trigger: 'blur'}],
+	},
 })
 
-const { queryParams, form, rules } = toRefs(data)
+const {queryParams, form, rules} = toRefs(data)
 
 watch(() => props.open, (newVal) => {
-  if (newVal)
-    handleQuery()
+	if (newVal)
+		handleQuery()
 })
 
 const title = computed(() => `${props.data.categoryName} - 二级分类`)
 
 const open = computed({
-  get() {
-    return props.open
-  },
-  set(value) {
-    emit('update:open', value)
-  },
+	get() {
+		return props.open
+	},
+	set(value) {
+		emit('update:open', value)
+	},
 })
 
 /** 查询种类列表 */
 function getList() {
-  loading.value = true
-  listCategory({ ...queryParams.value, pid: props.data.categoryId }).then((response: any) => {
-    categoryList.value = response.rows
-    total.value = response.total
-    loading.value = false
-  })
+	loading.value = true
+	listCategory({...queryParams.value, pid: props.data.categoryId}).then((response: any) => {
+		categoryList.value = response.rows
+		total.value = response.total
+		loading.value = false
+	})
 }
+
 /** 取消按钮 */
 function cancel() {
-  editOpen.value = false
-  reset()
+	editOpen.value = false
+	reset()
 }
+
 /** 表单重置 */
 function reset() {
-  form.value = {
-    categoryId: undefined,
-    categoryCode: undefined,
-    categoryName: undefined,
-    remark: undefined,
-  }
-  proxy!.resetForm('categoryRef')
+	form.value = {
+		categoryId: undefined,
+		categoryCode: undefined,
+		categoryName: undefined,
+		remark: undefined,
+	}
+	proxy!.resetForm('categoryRef')
 }
+
 /** 搜索按钮操作 */
 function handleQuery() {
-  queryParams.value.pageNum = 1
-  getList()
+	queryParams.value.pageNum = 1
+	getList()
 }
+
 /** 多选框选中数据 */
 function handleSelectionChange(selection: any[]) {
-  ids.value = selection.map(item => item.categoryId)
-  single.value = selection.length !== 1
-  multiple.value = !selection.length
+	ids.value = selection.map(item => item.categoryId)
+	single.value = selection.length !== 1
+	multiple.value = !selection.length
 }
+
 /** 新增按钮操作 */
 function handleAdd() {
-  reset()
-  open.value = true
-  editTitle.value = `添加${title.value}`
+	reset()
+	open.value = true
+	editTitle.value = `添加${title.value}`
 }
+
 /** 修改按钮操作 */
 function handleUpdate(row: any) {
-  reset()
-  const categoryId = row.categoryId || ids.value
-  getCategory(categoryId).then((response) => {
-    form.value = response.data
-    open.value = true
-    editTitle.value = `修改${title.value}`
-  })
+	reset()
+	const categoryId = row.categoryId || ids.value
+	getCategory(categoryId).then((response) => {
+		form.value = response.data
+		open.value = true
+		editTitle.value = `修改${title.value}`
+	})
 }
 
 /** 提交按钮 */
 function submitForm() {
-  (proxy?.$refs.categoryRef as any).validate((valid: any) => {
-    if (valid) {
-      if (form.value.categoryId !== undefined) {
-        updateCategory({
-          ...form.value,
-          pid: props.data.categoryId,
-        }).then(() => {
-          proxy!.$modal.msgSuccess('修改成功')
-          open.value = false
-          getList()
-        })
-      }
-      else {
-        addCategory({
-          ...form.value,
-          pid: props.data.categoryId,
-        }).then(() => {
-          proxy!.$modal.msgSuccess('新增成功')
-          open.value = false
-          getList()
-        })
-      }
-    }
-  })
+	(proxy?.$refs.categoryRef as any).validate((valid: any) => {
+		if (valid) {
+			if (form.value.categoryId !== undefined) {
+				updateCategory({
+					...form.value,
+					pid: props.data.categoryId,
+				}).then(() => {
+					proxy!.$modal.msgSuccess('修改成功')
+					open.value = false
+					getList()
+				})
+			} else {
+				addCategory({
+					...form.value,
+					pid: props.data.categoryId,
+				}).then(() => {
+					proxy!.$modal.msgSuccess('新增成功')
+					open.value = false
+					getList()
+				})
+			}
+		}
+	})
 }
+
 /** 删除按钮操作 */
 function handleDelete(row: any) {
-  const categoryIds = row.categoryId || ids.value
-  proxy!.$modal
-    .confirm(`是否确认删除种类编号为"${categoryIds}"的数据项？`)
-    .then(() => {
-      return delCategory(categoryIds)
-    })
-    .then(() => {
-      getList()
-      proxy!.$modal.msgSuccess('删除成功')
-    })
+	const categoryIds = row.categoryId || ids.value
+	proxy!.$modal
+		.confirm(`是否确认删除种类编号为"${categoryIds}"的数据项？`)
+		.then(() => {
+			return delCategory(categoryIds)
+		})
+		.then(() => {
+			getList()
+			proxy!.$modal.msgSuccess('删除成功')
+		})
 }
 </script>
 
 <template>
-  <el-dialog v-model="open" :title="title" append-to-body>
-    <div class="app-container">
-      <el-row :gutter="10" class="mb8">
-        <el-col :span="1.5">
-          <el-button
-            type="primary"
-            plain
-            icon="Plus"
-            @click="handleAdd"
-          >
-            新增
-          </el-button>
-        </el-col>
-        <el-col :span="1.5">
-          <el-button
-            type="success"
-            plain
-            icon="Edit"
-            :disabled="single"
-            @click="handleUpdate"
-          >
-            修改
-          </el-button>
-        </el-col>
-        <el-col :span="1.5">
-          <el-button
-            type="danger"
-            plain
-            icon="Delete"
-            :disabled="multiple"
-            @click="handleDelete"
-          >
-            删除
-          </el-button>
-        </el-col>
-      </el-row>
+	<el-dialog v-model="open" :title="title" append-to-body>
+		<div class="app-container">
+			<el-row :gutter="10" class="mb8">
+				<el-col :span="1.5">
+					<el-button
+						type="primary"
+						plain
+						icon="Plus"
+						@click="handleAdd"
+					>
+						新增
+					</el-button>
+				</el-col>
+				<el-col :span="1.5">
+					<el-button
+						type="success"
+						plain
+						icon="Edit"
+						:disabled="single"
+						@click="handleUpdate"
+					>
+						修改
+					</el-button>
+				</el-col>
+				<el-col :span="1.5">
+					<el-button
+						type="danger"
+						plain
+						icon="Delete"
+						:disabled="multiple"
+						@click="handleDelete"
+					>
+						删除
+					</el-button>
+				</el-col>
+			</el-row>
 
-      <el-table v-loading="loading" :data="categoryList" @selection-change="handleSelectionChange">
-        <el-table-column type="selection" width="55" align="center" />
-        <el-table-column label="种类编号" align="center" prop="categoryId" />
-        <el-table-column label="种类编码" align="center" prop="categoryCode" />
-        <el-table-column label="种类名称" align="center" prop="categoryName" />
-        <el-table-column label="创建时间" align="center" prop="createTime" width="180">
-          <template #default="scope">
-            <span>{{ parseTime(scope.row.createTime) }}</span>
-          </template>
-        </el-table-column>
-        <el-table-column label="操作" width="180" align="center" class-name="small-padding fixed-width">
-          <template #default="scope">
-            <el-button link type="primary" icon="Edit" @click="handleUpdate(scope.row)">
-              修改
-            </el-button>
-            <el-button link type="primary" icon="Delete" @click="handleDelete(scope.row)">
-              删除
-            </el-button>
-          </template>
-        </el-table-column>
-      </el-table>
+			<el-table v-loading="loading" :data="categoryList" @selection-change="handleSelectionChange">
+				<el-table-column type="selection" width="55" align="center"/>
+				<el-table-column label="种类编号" align="center" prop="categoryId"/>
+				<el-table-column label="种类编码" align="center" prop="categoryCode"/>
+				<el-table-column label="种类名称" align="center" prop="categoryName"/>
+				<el-table-column label="创建时间" align="center" prop="createTime" width="180">
+					<template #default="scope">
+						<span>{{ parseTime(scope.row.createTime) }}</span>
+					</template>
+				</el-table-column>
+				<el-table-column label="操作" width="180" align="center" class-name="small-padding fixed-width">
+					<template #default="scope">
+						<el-button link type="primary" icon="Edit" @click="handleUpdate(scope.row)">
+							修改
+						</el-button>
+						<el-button link type="primary" icon="Delete" @click="handleDelete(scope.row)">
+							删除
+						</el-button>
+					</template>
+				</el-table-column>
+			</el-table>
 
-      <pagination
-        v-show="total > 0"
-        v-model:page="queryParams.pageNum"
-        v-model:limit="queryParams.pageSize"
-        :total="total"
-        @pagination="getList"
-      />
+			<pagination
+				v-show="total > 0"
+				v-model:page="queryParams.pageNum"
+				v-model:limit="queryParams.pageSize"
+				:total="total"
+				@pagination="getList"
+			/>
 
-      <!-- 添加或修改种类对话框 -->
-      <el-dialog v-model="editOpen" :title="editTitle" width="500px" append-to-body>
-        <el-form ref="categoryRef" :model="form" :rules="rules" label-width="80px">
-          <el-form-item label="种类名称" prop="categoryName">
-            <el-input v-model="form.categoryName" placeholder="请输入种类名称" />
-          </el-form-item>
-          <el-form-item label="种类编码" prop="categoryCode">
-            <el-input v-model="form.categoryCode" placeholder="请输入编码名称" />
-          </el-form-item>
-          <el-form-item label="备注" prop="remark">
-            <el-input v-model="form.remark" type="textarea" placeholder="请输入内容" />
-          </el-form-item>
-        </el-form>
-        <template #footer>
-          <div class="dialog-footer">
-            <el-button type="primary" @click="submitForm">
-              确 定
-            </el-button>
-            <el-button @click="cancel">
-              取 消
-            </el-button>
-          </div>
-        </template>
-      </el-dialog>
-    </div>
-  </el-dialog>
+			<!-- 添加或修改种类对话框 -->
+			<el-dialog v-model="editOpen" :title="editTitle" width="500px" append-to-body>
+				<el-form ref="categoryRef" :model="form" :rules="rules" label-width="80px">
+					<el-form-item label="种类名称" prop="categoryName">
+						<el-input v-model="form.categoryName" placeholder="请输入种类名称"/>
+					</el-form-item>
+					<el-form-item label="种类编码" prop="categoryCode">
+						<el-input v-model="form.categoryCode" placeholder="请输入编码名称"/>
+					</el-form-item>
+					<el-form-item label="备注" prop="remark">
+						<el-input v-model="form.remark" type="textarea" placeholder="请输入内容"/>
+					</el-form-item>
+				</el-form>
+				<template #footer>
+					<div class="dialog-footer">
+						<el-button type="primary" @click="submitForm">
+							确 定
+						</el-button>
+						<el-button @click="cancel">
+							取 消
+						</el-button>
+					</div>
+				</template>
+			</el-dialog>
+		</div>
+	</el-dialog>
 </template>
